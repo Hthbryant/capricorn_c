@@ -13,7 +13,7 @@ import java.util.List;
  * version 1.0
  */
 @Mapper
-public interface PlayerMapper {
+public interface PlayerDao {
 
     List<Player> queryPlayerList ();
 

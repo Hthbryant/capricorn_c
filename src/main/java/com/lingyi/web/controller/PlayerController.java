@@ -1,7 +1,7 @@
 package com.lingyi.web.controller;
 
 import com.lingyi.biz.entity.Player;
-import com.lingyi.biz.integration.dao.PlayerMapper;
+import com.lingyi.biz.integration.dao.PlayerDao;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,11 +22,11 @@ import java.util.List;
 public class PlayerController {
 
     @Autowired
-    private PlayerMapper playerMapper;
+    private PlayerDao playerDao;
 
     @RequestMapping("/list")
     public List<Player> getList() {
-        List<Player> players = playerMapper.queryPlayerList();
+        List<Player> players = playerDao.queryPlayerList();
         log.info("players:{}",players);
         return players;
     }
