@@ -11,10 +11,14 @@ import lombok.Getter;
  */
 public enum ErrorStatus {
 
+    //系统类
     SUCCESS("0","成功"),
     SYSTEM_ERROR("1001","系统异常"),
     TIMEOUT_ERROR("1002","系统超时，请稍后重试"),
-    REQUEST_PARAM_WRONG("1003","参数错误，请检查参数")
+    REQUEST_PARAM_WRONG("1003","参数错误，请检查参数"),
+
+    //权限类
+    NO_PERMISSION("2001","权限认证失败"),
     ;
 
     @Getter

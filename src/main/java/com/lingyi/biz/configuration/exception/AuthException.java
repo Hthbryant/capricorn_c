@@ -8,4 +8,14 @@ package com.lingyi.biz.configuration.exception;
  * version 1.0
  */
 public class AuthException extends RuntimeException{
+
+    private String errorMsg;
+
+    public AuthException () {
+        
+    }
+
+    public AuthException (String errorMsg) {
+        super(errorMsg);
+    }
 }
