@@ -1,7 +1,7 @@
-package com.lingyi.biz.configuration.handler;
+package com.lingyi.biz.config.handler;
 
 import com.lingyi.biz.common.enums.ErrorStatus;
-import com.lingyi.biz.configuration.exception.AuthException;
+import com.lingyi.biz.config.exception.AuthException;
 import com.lingyi.web.dto.BaseResponseDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

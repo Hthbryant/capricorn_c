@@ -1,4 +1,4 @@
-package com.lingyi.biz.configuration.aop;
+package com.lingyi.biz.config.aop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;

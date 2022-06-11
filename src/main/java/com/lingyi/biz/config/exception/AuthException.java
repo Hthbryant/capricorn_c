@@ -1,4 +1,4 @@
-package com.lingyi.biz.configuration.exception;
+package com.lingyi.biz.config.exception;
 
 /**
  * @author 咕噜科

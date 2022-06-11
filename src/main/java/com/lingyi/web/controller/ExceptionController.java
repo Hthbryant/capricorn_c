@@ -1,6 +1,6 @@
 package com.lingyi.web.controller;
 
-import com.lingyi.biz.configuration.exception.AuthException;
+import com.lingyi.biz.config.exception.AuthException;
 import com.lingyi.web.dto.BaseResponseDTO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

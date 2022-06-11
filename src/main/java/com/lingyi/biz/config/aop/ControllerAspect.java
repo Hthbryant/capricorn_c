@@ -1,4 +1,4 @@
-package com.lingyi.biz.configuration.aop;
+package com.lingyi.biz.config.aop;
 
 import com.lingyi.web.dto.BaseDTO;
 import org.aspectj.lang.JoinPoint;
