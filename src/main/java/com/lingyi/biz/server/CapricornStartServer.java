@@ -3,6 +3,7 @@ package com.lingyi.biz.server;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
@@ -12,7 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
  * Description:
  * version 1.0
  */
-@SpringBootApplication
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @ComponentScan(basePackages = "com.lingyi")
 @MapperScan(basePackages = "com.lingyi.biz.integration.dao")
 public class CapricornStartServer {
